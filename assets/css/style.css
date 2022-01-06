@@ -192,8 +192,37 @@ body{
     }
 
     .hamburger{
+        position: relative;
         width: 2rem;
-        height: .3rem;
+        height: 3px;
         background-color: red;
     }
+
+    .hamburger::after, .hamburger::before{
+        position: absolute;
+        content: '';
+        width: 2rem;
+        height: 3px;
+        background-color: red;
+    }
+
+    .hamburger::after{
+        transform: translateY(7px);
+    }
+    .hamburger::before{
+        transform: translateY(-7px);
+    }
+
+    .hamburger.active{
+        height: 0;
+    }
+
+    .hamburger.active::after{
+        transform: rotate(-45deg) translateY(0);
+    }
+    .hamburger.active::before{
+        transform: rotate(45deg) translateY(0);
+    }
+
+
 }
