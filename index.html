@@ -80,20 +80,21 @@
 
 
 
-    <script>
+    <!-- <script>
         window.addEventListener('DOMContentLoaded', (event) => {
             var hamburger = document.querySelector('.hamburger');
 
             hamburger.addEventListener('click', function(e){
                 var classlist = e.target.classList;
                 console.log(typeof classlist);
-                // if(classlist.includes('active')){
-                //     e.target.classList.remove('active')
-                // }else{
-                //     e.target.classList.add('active')
-                // }
+                if(classlist.includes('active')){
+                    e.target.classList.remove('active')
+                }else{
+                    e.target.classList.add('active')
+                }
             })
         });
-    </script>
+    </script> -->
+    
 </body>
 </html>
