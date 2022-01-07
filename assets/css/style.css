@@ -132,7 +132,7 @@ body{
     background: var(--color-primary);
     padding: .4rem 2.5rem;
     border-radius: 10rem;
-    box-shadow: 0px 2px 16px 2px #4781e78c;
+    box-shadow: 0px 10px 34px rgba(15, 130, 219, 0.45);
 }
 
 
@@ -158,8 +158,7 @@ body{
     height: 86rem;
     width: 86rem;
     border-radius: 50%;
-    background-image: linear-gradient(140deg, #0071bc, #fff);
-    opacity: .2;
+    background: linear-gradient(135deg, rgba(0, 113, 188, 0.5) 0%, rgba(255, 255, 255, 0) 75%);
     z-index: -14;
     transform: translate(-40rem, -40rem);
 }
@@ -173,8 +172,7 @@ body{
     width: 70rem;
     border-radius: 50%;
     z-index: -14;
-    background-image: linear-gradient(-60deg,#CC3B9C, #fff);
-    opacity: .1;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0) 15%, rgba(204,59,156,0.2) 100%);
     transform: translate(45rem, -3rem);
 }
 
@@ -227,6 +225,14 @@ body{
     width: 40%;
     display: flex;
     justify-content: flex-end;
+    position: relative;
+}
+
+.banner .right-side > .banner-bg{
+    position: absolute;
+    width: 65%;
+    left: 74%;
+    top: 3%;
 }
 
 .banner .right-side .img-wrapper{
