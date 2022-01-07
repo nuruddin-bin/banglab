@@ -176,6 +176,12 @@ body{
     transform: translate(45rem, -3rem);
 }
 
+.banner .banner-bg{
+    position: absolute;
+    width: 28%;
+    left: 83.5%;
+    top: 2%;
+}
 
 /* left side */
 
@@ -211,6 +217,7 @@ body{
     padding: .8rem 2rem 0 2rem;
     border-radius: .7rem;
     margin: 5rem 0;
+    box-shadow: 0px 5px 30px -10px rgba(0,0,0,0.2);
 }
 
 .banner .left-side .innovation-block p{
@@ -228,12 +235,12 @@ body{
     position: relative;
 }
 
-.banner .right-side > .banner-bg{
+/* .banner .right-side > .banner-bg{
     position: absolute;
     width: 65%;
     left: 74%;
     top: 3%;
-}
+} */
 
 .banner .right-side .img-wrapper{
     width: 23.6rem;
@@ -404,6 +411,12 @@ body{
 
 @media(max-width: 800px){
     /* banner */
+    .banner .banner-bg{
+        width: 40%;
+        left: 75%;
+        top: 6%;
+    }
+
     .banner .left-side h1{
         font-size: 1.75rem;
         margin-top: 5rem;
