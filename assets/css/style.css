@@ -421,11 +421,12 @@ body{
         align-items: flex-start;
         top: 3.5rem;
         background-color: #fff;
-        width: 100%;
+        width: calc(100% + 2rem);
         min-height: calc(100vh - 3.5rem);
         /* transform: translateX(-2rem); */
         transform: translateX(60rem);
         transition: all .5s ease;
+        
     }
 
     /* .nav-active{
