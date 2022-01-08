@@ -1,2 +1,4 @@
 # banglab
-Banglab UI
+Demo
+
+https://nuruddin-bin.github.io/banglabs/
