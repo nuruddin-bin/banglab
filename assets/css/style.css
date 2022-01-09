@@ -249,11 +249,10 @@ body{
 
 /*--------- services --------*/
 .services{
-    background-color: lightblue;
+    background-color: transparent;
     width: min(90rem, 100%);
     padding: 0 5rem;
     position: relative;
-    /* top: 46.6125rem; */
 }
 
 /* service heading */
@@ -314,7 +313,6 @@ body{
     border-radius: .7rem;
     border: 2px solid transparent;
     transition: .3s;
-    /* margin-top: 12rem; */
     margin: 12rem 1rem 0 1rem;
     box-shadow: 0px 2px 30px -2px rgba(0,0,0,0.1);
 }
@@ -362,6 +360,26 @@ body{
  -----------responsive design----------- 
  -------------------------------------*/
 
+@media (max-width: 1209px){
+    /* 3rd column */
+    .col-3{
+        width: 100%;
+        flex-direction: initial;
+        justify-content: space-evenly;
+    }
+
+    /* 1st card */
+    .col-3 .card-1st{
+        margin-top: 3rem;
+    }
+
+    /* 2nd card */
+    .col-3 .card-2nd{
+        transform: translateY(-7rem);
+    }
+}
+
+
  @media(max-width: 1150px){
 
     /* banner */
@@ -388,6 +406,11 @@ body{
 
     .img-wrapper img{
         margin-top: 3rem;
+    }
+
+    /* service-heading */
+    .service-heading h2{
+        font-size: 2.4rem;
     }
 }
 
@@ -509,6 +532,38 @@ body{
     .innovation-block{
         margin: 3rem 0;
     }
+
+    /* service-heading */
+    .service-heading h2{
+        font-size: 2.2rem;
+    }
+}
+
+
+@media (max-width: 859px){
+    .services__cards{
+        margin-bottom: 0;
+    }
+
+    /* 1st clumn 1st card */
+    .col-1 .card-1st{
+        margin-top: 5rem;
+    }
+
+    /* 2st clumn 1st card */
+    .col-2 .card-1st{
+        margin-top: 10rem;
+    }
+
+     /*column 3  */
+    .col-3{
+        flex-direction: column;
+        transform: translateY(-7rem);
+    }
+
+    .col-3 .card-2nd{
+        margin-top: 10rem;
+    }
 }
 
 
@@ -538,6 +593,12 @@ body{
     /* services */
     .services{
         padding: 0 2rem;
+    }
+
+    /* service-heading */
+    .service-heading h2{
+        font-size: 1.75rem;
+        line-height: 1.2;
     }
 }
 
