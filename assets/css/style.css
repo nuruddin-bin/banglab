@@ -542,7 +542,7 @@ body{
 
 @media (max-width: 859px){
     .services__cards{
-        margin-bottom: 0;
+        margin-bottom: -8rem;
     }
 
     /* 1st clumn 1st card */
