@@ -264,6 +264,7 @@ html{
     flex-direction: column;
     align-items: center;
     font-family: var(--font-poppins);
+    margin: 0 2rem;
 }
 
 .service-heading h2{
@@ -292,7 +293,7 @@ html{
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 11rem;
 }
 
 /* all column */
@@ -311,8 +312,7 @@ html{
 
 /* all card */
 .card{
-    background-color: #fff;
-    /* width: 19.875rem; */
+    background-color: transparent;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -361,6 +361,24 @@ html{
 .card a:hover{
     color: #4384F5;
     border-color: #4384F5;
+}
+
+
+/* service background */
+.serv-bg-wrapper{
+    position: absolute;
+    width: 100%;
+    z-index: -14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serv-bg{
+    display: block;
+    width: 55%;
+    min-width: 30rem;
+    transform: translate(6.3rem, 14rem);
 }
 
 
