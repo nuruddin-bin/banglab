@@ -251,11 +251,12 @@ html{
 }
 
 
-/*--------- services --------*/
+/*---------------- services --------------------*/
 .services{
     background-color: transparent;
     width: min(90rem, 100%);
     position: relative;
+    overflow-x: hidden;
 }
 
 /* service heading */
@@ -381,6 +382,25 @@ html{
     width: 55%;
     min-width: 30rem;
     transform: translate(6.3rem, 14rem);
+}
+
+
+/*----------------- special --------------------*/
+.special{
+    background-color: lightblue;
+}
+
+/* heading */
+.special__heading{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: var(--font-poppins);
+    background-color: transparent;
+    margin: 0 1rem;
+}
+
+.special__heading span{
+    color: var(--color-primary);
 }
 
 
@@ -645,6 +665,13 @@ html{
     .right-side{
         display: none;
     }
+
+    
+    /* service background */
+    .serv-bg{
+        transform: translate(3.5rem, 27rem);
+        min-height: 25rem;
+    }
 }
 
 
@@ -669,4 +696,3 @@ html{
         margin-top: 3rem;
     }
 }
-
