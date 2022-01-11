@@ -37,7 +37,9 @@
     
             <!-- hamburger -->
             <div class="hamburger-wrapper">
-                <div class="hamburger active"></div>
+                <span data-target="nav-right-side" class="hamburger-btn">
+                    <div class="hamburger"></div>
+                </span>
             </div>
         </nav>
 
@@ -131,6 +133,18 @@
             </div>
 
         </section>
-        
+        <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                var hamburger = document.querySelector('.hamburger-btn');
+
+                hamburger.addEventListener('click', function(e){
+                    e.stopPropagation();
+                    console.log(e.currentTarget);
+                    var rightSide = document.querySelector('.' + e.currentTarget.dataset.target);
+                    e.currentTarget.children[0].classList.toggle('active');
+                    rightSide.classList.toggle('nav-active');
+                })
+            });
+        </script>
 </body>
 </html>

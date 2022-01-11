@@ -452,17 +452,20 @@ html{
         align-items: flex-start;
         top: 3.5rem;
         background-color: #fff;
-        width: calc(100% + 2rem);
         min-height: calc(100vh - 3.5rem);
         /* transform: translateX(-2rem); */
         transform: translateX(60rem);
+        width: 0;
+        overflow: hidden;
         transition: all .5s ease;
         
     }
 
-    /* .nav-active{
+    .nav-active{
+        width: calc(100% + 2rem);
         transform: translateX(-2rem);
-    } */
+        overflow: initial;
+    }
 
     .nav-links{
         flex-direction: column;
@@ -482,6 +485,12 @@ html{
         display: flex;
         justify-content: flex-end;
         align-items: center;
+    }
+
+    .hamburger-btn{
+        height: 100%;
+        padding-top: 11px;
+        z-index: 9;
     }
 
     .hamburger{
@@ -660,3 +669,4 @@ html{
         margin-top: 3rem;
     }
 }
+
