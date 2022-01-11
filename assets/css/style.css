@@ -290,7 +290,7 @@ html{
 .services__cards{
     background-color: transparent;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     margin-bottom: 11rem;
@@ -304,6 +304,8 @@ html{
     width: calc(100% / 3 - 8rem);
     min-width: 17rem;
     margin-top: 3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .col-1, .col-3{
