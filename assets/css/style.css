@@ -294,7 +294,7 @@ html{
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 11rem;
+    margin-bottom: 9rem;
 }
 
 /* all column */
@@ -388,6 +388,7 @@ html{
 /*----------------- special --------------------*/
 .special{
     width: min(90rem, 100%);
+    /* background-color: lightblue; */
 }
 
 /* heading */
@@ -396,7 +397,7 @@ html{
     font-size: 2.5rem;
     font-family: var(--font-poppins);
     background-color: transparent;
-    margin: 0 1rem;
+    margin: 2rem 1rem 5rem 1rem;
 }
 
 .special__heading span{
@@ -405,11 +406,13 @@ html{
 
 /* main card wrapper */
 .spe__card-wrapper{
-    background-color: lightblue;
+    background-color: transparent;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 0 2rem;
+    margin-bottom: 5rem;
 }
 
 .s_cards-col{
@@ -423,17 +426,81 @@ html{
 /* all card */
 .s_cards-col .card{
     width: 100%;
-    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem 1.5rem;
     border-radius: .5rem;
+    box-shadow: none;
 }
 
 .s_cards-col .card-2{
     margin-top: 2rem;
 }
+
+/* column 1 */
+.s_col-1 .card-1{
+    background-color: rgba(162, 46, 229, 0.1);
+}
+.s_col-1 .card-1:hover{
+    border: 2px solid rgba(156, 94, 226, 0.5);
+}
+.s_col-1 .card-1 .card__icon{
+    background: linear-gradient(180deg, #9b5ee2 10%, #953898 100%);
+}
+
+.s_col-1 .card-2{
+    background-color: rgba(255, 0, 0, 0.1);
+}
+.s_col-1 .card-2:hover{
+    border: 2px solid rgba(226, 94, 94, 0.5);
+}
+.s_col-1 .card-2 .card__icon{
+    background: linear-gradient(180deg, #E17777 10%, #E25E5E 100%);
+}
+
+/* column 2 */
+.s_col-2 .card-1{
+    background-color: rgba(70, 46, 229, 0.1);
+}
+.s_col-2 .card-1:hover{
+    border: 2px solid rgba(103, 94, 226, 0.5);
+}
+.s_col-2 .card-1 .card__icon{
+    background: linear-gradient(180deg, #675EE2 10%, #4F579E 100%);
+}
+
+.s_col-2 .card-2{
+    background-color: rgba(17, 210, 126, 0.1);
+}
+.s_col-2 .card-2:hover{
+    border: 2px solid rgba(50, 188, 179, 0.5);
+}
+.s_col-2 .card-2 .card__icon{
+    background: linear-gradient(180deg, #32BCB3 10%, #38983E 100%);
+}
+
+/* column 3 */
+.s_col-3 .card-1{
+    background-color: rgba(46, 113, 229, 0.1);
+}
+.s_col-3 .card-1:hover{
+    border: 2px solid rgba(1, 97, 242, 0.5);
+}
+.s_col-3 .card-1 .card__icon{
+    background: linear-gradient(180deg, #0162F2 10%, #4382CB 100%);
+}
+
+.s_col-3 .card-2{
+    background-color: rgba(255, 136, 0, 0.1);
+}
+.s_col-3 .card-2:hover{
+    border: 2px solid rgba(252, 186, 6, 0.5);
+}
+.s_col-3 .card-2 .card__icon{
+    background: linear-gradient(180deg, #FCBA06 10%, #EF7517 100%);
+}
+
 
 .s_cards-col .card .card__icon{
     width: 3.7rem;
@@ -451,9 +518,12 @@ html{
 }
 
 .s_cards-col .card p{
+    color: #363637;
     font-size: 1rem;
     margin: 1.1rem 0 .5rem 0;
 }
+
+
 
 
 /*--------------------------------------
@@ -490,6 +560,11 @@ html{
 
     /* service-heading */
     .service-heading h2{
+        font-size: 2.4rem;
+    }
+
+    /* special */
+    .special__heading{
         font-size: 2.4rem;
     }
 }
@@ -571,6 +646,7 @@ html{
         height: 3px;
         background-color: var(--color-primary);
         border-radius: 2px;
+        transition: .1s;
     }
 
     .hamburger::after, .hamburger::before{
@@ -580,6 +656,7 @@ html{
         height: 3px;
         background-color: var(--color-primary);
         border-radius: 2px;
+        transition: .3s;
     }
 
     .hamburger::after{
@@ -647,6 +724,30 @@ html{
     .col-3 .card-2nd{
         margin-top: -12rem;
     }
+
+    /* special */
+    .special__heading{
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 879px){
+    /* special */
+    .s_col-3{
+        width: calc(100% - 17rem);
+        flex-direction: initial;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .s_col-3 .card{
+        min-width: 15rem;
+        margin: 0 1rem;
+    }
+
+    .s_col-3 .card-2{
+        margin-top: 0;
+    }
 }
 
 
@@ -678,6 +779,11 @@ html{
         font-size: 1.75rem;
         line-height: 1.2;
         padding: 0 2rem;
+    }
+
+    /* special */
+    .special__heading{
+        font-size: 1.75rem;
     }
 }
 
@@ -746,5 +852,17 @@ html{
 
     .col-3 .card-2nd{
         margin-top: 3rem;
+    }
+}
+
+
+@media (max-width: 607px){
+    /* special */
+    .s_cards-col{
+        width: calc(100% - 10rem);
+    }
+
+    .col-2{
+        margin-top: 2rem;
     }
 }
