@@ -387,7 +387,7 @@ html{
 
 /*----------------- special --------------------*/
 .special{
-    background-color: lightblue;
+    
 }
 
 /* heading */
@@ -402,6 +402,13 @@ html{
 .special__heading span{
     color: var(--color-primary);
 }
+
+/* main card wrapper */
+.spe__card-wrapper{
+    background-color: lightblue;
+}
+
+
 
 
 /*--------------------------------------
