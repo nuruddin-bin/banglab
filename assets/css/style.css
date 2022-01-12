@@ -387,7 +387,7 @@ html{
 
 /*----------------- special --------------------*/
 .special{
-    
+    width: min(90rem, 100%);
 }
 
 /* heading */
@@ -406,8 +406,21 @@ html{
 /* main card wrapper */
 .spe__card-wrapper{
     background-color: lightblue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
+.s_cards-col{
+    width: calc(100% / 3 - 7rem);
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.s_cards-col .card{
+    background-color: #fff;
+}
 
 
 
