@@ -31,8 +31,7 @@ html{
 }
 
 
-/*----- navbar-------
-------------------- */
+/*----------------- navbar---------------------- */
 .navbar{
     width: min(90rem, 100%);
     height: 5rem;
@@ -44,7 +43,7 @@ html{
 }
 
 
-/*------- nav left side ----------*/
+/*---- nav left side ---*/
 
 .nav-left-side{
     width: 25%;
@@ -74,7 +73,7 @@ html{
 }
 
 
-/*------- nav right side ----------*/
+/*----- nav right side ------*/
 
 .nav-right-side{
     width: 75%;
@@ -137,8 +136,7 @@ html{
 }
 
 
-/*---- banner-------
-------------------- */
+/*---------------------- banner-------------------- */
 
 .banner{
     width: min(90rem, 100%);
@@ -195,13 +193,13 @@ html{
     font-family: var(--font-poppins);
 }
 
-.h1{
+.left-side h1{
     color: #21272D;
     font-size: 2.75rem;
     margin-top: 8rem;
 }
 
-.h2{
+.left-side h2{
     font-size: 2.75rem;
     color: #1D89E8;
 }
@@ -251,7 +249,7 @@ html{
 }
 
 
-/*---------------- services --------------------*/
+/*------------------ services -----------------------*/
 .services{
     background-color: transparent;
     width: min(90rem, 100%);
@@ -385,10 +383,30 @@ html{
 }
 
 
-/*----------------- special --------------------*/
+/*---------------------- special -----------------------*/
 .special{
+    position: relative;
     width: min(90rem, 100%);
-    /* background-color: lightblue; */
+    background: url(../img/special/special-bg.svg)  no-repeat top center;
+}
+
+/* seecial_logo */
+.sp_logo-wrapper{
+    position: absolute;
+    width: 8.5rem;
+    height: 8.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    top: -3rem;
+    right: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 30px -2px rgba(0,0,0,0.1);
+}
+
+.sp_logo{
+    width: 3.5rem;
 }
 
 /* heading */
@@ -397,7 +415,7 @@ html{
     font-size: 2.5rem;
     font-family: var(--font-poppins);
     background-color: transparent;
-    margin: 2rem 1rem 5rem 1rem;
+    margin: 12rem 1rem 5rem 1rem;
 }
 
 .special__heading span{
@@ -416,11 +434,6 @@ html{
 }
 
 .sp_cards{
-    /* width: calc(100% / 3 - 11rem);
-    display: flex;
-    flex-direction: column;
-    margin: 0 1rem;
-    min-width: 15rem; */
     width: 775px;
     display: flex;
     justify-content: space-between;
@@ -429,20 +442,14 @@ html{
 
 /* all card */
 .sp_cards .card{
-    /* width: 100%; */
     width: 245px;
     margin-top: 20px;
-    /* margin-right: 20px; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem 1.5rem;
     border-radius: .5rem;
     box-shadow: none;
-}
-
-.s_cards-col .card-2{
-    /* margin-top: 2rem; */
 }
 
 /* column 1 */
@@ -540,13 +547,13 @@ html{
  @media(max-width: 1150px){
 
     /* banner */
-    .h1{
+    .left-side h1{
         margin-top: 6rem;
         font-size: 2.4rem;
         line-height: 1.1;
     }
 
-    .h2{
+    .left-side h2{
         font-size: 2.4rem;
         line-height: 1;
         margin-top: .5rem;
@@ -590,6 +597,44 @@ html{
     
 }
 
+@media(max-width: 969px){
+    /* service */
+    .cards__col{
+        width: calc(100% / 2 - 8rem);
+    }
+
+    .col-3{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-top: 3rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .col-3 .card{
+        width: calc(100% / 2 - 8rem);
+        min-width: 17rem;
+    }
+
+    .col-3 .card-1st{
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
+
+    .col-3 .card-2nd{
+        margin-top: -12rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    /* sp logo */
+    .sp_logo-wrapper{
+        top: -3rem;
+        right: 6rem;
+    }
+}
+
 
 @media(max-width: 920px){
     /* navbar */
@@ -607,18 +652,16 @@ html{
         top: 3.5rem;
         background-color: #fff;
         min-height: calc(100vh - 3.5rem);
-        /* transform: translateX(-2rem); */
         transform: translateX(60rem);
         width: 0;
         overflow: hidden;
         transition: all .5s ease;
-        
     }
 
     .nav-active{
-        width: calc(100% + 2rem);
+        width: 100%;
         transform: translateX(-2rem);
-        overflow: initial;
+        overflow: hidden;
     }
 
     .nav-links{
@@ -689,12 +732,12 @@ html{
         padding: 0 2rem;
     }
 
-    .h1{
+    .left-side h1{
         font-size: 2.2rem;
         line-height: 1.2;
     }
 
-    .h2{
+    .left-side h2{
         font-size: 2.2rem;
     }
 
@@ -709,27 +752,6 @@ html{
     /* service-heading */
     .service-heading h2{
         font-size: 2.2rem;
-    }
-
-    /* services card column */
-    .cards__col{
-        width: calc(100% / 2 - 7rem);
-    }
-
-    .col-3{
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-evenly;
-        margin-top: 3rem;
-    }
-
-    .col-3 .card{
-        width: calc(100% / 2 - 7rem);
-        min-width: 17rem;
-    }
-
-    .col-3 .card-2nd{
-        margin-top: -12rem;
     }
 
     /* special */
@@ -766,12 +788,12 @@ html{
         top: 6%;
     }
 
-    .h1{
+    .left-side h1{
         font-size: 1.75rem;
         margin-top: 5rem;
     }
 
-    .h2{
+    .left-side h2{
         font-size: 1.75rem;
         line-height: 1.2;
     }
@@ -806,6 +828,12 @@ html{
         padding: 1rem;
     }
 
+    .nav-active{
+        width: 100%;
+        transform: translateX(-1rem);
+        overflow: hidden;
+    }
+
     /* banner */
     .banner{
         padding: 0 1rem;
@@ -814,11 +842,11 @@ html{
         width: 100%;
     }
 
-    .h1{
+    .left-side h1{
         width: 100%;
     }
 
-    .h2{
+    .left-side h2{
         width: 100%;
     }
 
@@ -828,6 +856,7 @@ html{
 
     .innovation-block{
         margin: 2.5rem 0;
+        width: 100%;
     }
 
     .banner::after, 
@@ -844,7 +873,12 @@ html{
 }
 
 
-@media (max-width: 620px){
+@media (max-width: 639px){
+    /* service cards */
+    .services__cards{
+        margin-bottom: 7rem;
+    }
+
     /* services all column */
     .cards__col{
         width: calc(100% - 17rem);
@@ -864,6 +898,12 @@ html{
     .col-3 .card-2nd{
         margin-top: 3rem;
     }
+
+    /* sp logo */
+    .sp_logo-wrapper{
+        top: -1.5rem;
+        right: 3rem;
+    }
 }
 
 
@@ -876,5 +916,4 @@ html{
     .sp_cards .card{
         width: 100%;
     }
-
 }
