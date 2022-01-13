@@ -243,6 +243,13 @@ html{
     position: relative;
 }
 
+.right-side .img-wrapper .banner_B{
+    position: absolute;
+    top: 18rem;
+    left: 7.5rem;
+    width: 8.4rem;
+}
+
 .right-side .img-wrapper img{
     display: block;
     width: 100%;
