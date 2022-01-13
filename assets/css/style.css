@@ -387,43 +387,26 @@ html{
 .special{
     position: relative;
     width: min(90rem, 100%);
-    background: linear-gradient(180deg, rgba(102,45,145,.1) 0%, rgba(255,255,255,0) 100%);
-    clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
+    background: url(../img/special/special-bg.svg)  no-repeat top center;
 }
 
-/* logo_sp */
-.logo_sp-wrapper{
+/* seecial_logo */
+.sp_logo-wrapper{
     position: absolute;
-    top: 5rem;
-    right: 5rem;
     width: 8.5rem;
     height: 8.5rem;
-    border-radius: 50%;
     background-color: #fff;
+    border-radius: 50%;
+    top: -3rem;
+    right: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 2px 30px -2px rgba(0,0,0,0.1);
-    z-index: 9999;
 }
 
-.logo_sp{
+.sp_logo{
     width: 3.5rem;
-}
-
-/* hexagon */
-.hexagon_1{
-    position: absolute;
-    top: 21rem;
-    left: 4rem;
-    width: 10rem;
-}
-
-.hexagon_2{
-    position: absolute;
-    top: 14rem;
-    right: 10rem;
-    width: 7rem;
 }
 
 /* heading */
@@ -643,6 +626,12 @@ html{
         margin-top: -12rem;
         margin-left: 1.5rem;
         margin-right: 1.5rem;
+    }
+
+    /* sp logo */
+    .sp_logo-wrapper{
+        top: -3rem;
+        right: 6rem;
     }
 }
 
@@ -885,6 +874,11 @@ html{
 
 
 @media (max-width: 639px){
+    /* service cards */
+    .services__cards{
+        margin-bottom: 7rem;
+    }
+
     /* services all column */
     .cards__col{
         width: calc(100% - 17rem);
@@ -903,6 +897,12 @@ html{
 
     .col-3 .card-2nd{
         margin-top: 3rem;
+    }
+
+    /* sp logo */
+    .sp_logo-wrapper{
+        top: -1.5rem;
+        right: 3rem;
     }
 }
 
