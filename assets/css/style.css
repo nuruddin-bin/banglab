@@ -556,24 +556,30 @@ html{
 }
 
 .team_card_container{
-    width: 75rem;
+    width: 70rem;
     background-color: #108EEE;
     box-shadow: 0px 2px 30px -2px rgba(0,0,0,0.1);
     display: flex;
-    align-items: center;
-    padding: 5rem 3rem 5rem 7rem;
+    align-items: flex-start;
+    padding: 5rem 3rem 5rem 5rem;
 }
 
 /* left side */
 .team_profile_area{
-    width: 30%;
-    background-color: red;
+    width: 35%;
+    background-color: transparent;
+
 }
 
 /* card view area */
 .team_profile_view{
-    width: 19rem;
-    background-color: lightblue;
+    width: 18.8rem;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5rem;
 }
 
 /* .profile-design{
@@ -581,12 +587,16 @@ html{
 } */
 
 .team_card{
-    background-color: #fff;
+    background-color: transparent;
     width: 16rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.8rem;
 }
 
 .team_card img{
     width: 100%;
+    border-radius: .3rem;
+    box-shadow: 0px 2px 30px -2px rgba(0,0,0,0.1);
 }
 
 .team_card h3{
@@ -604,16 +614,30 @@ html{
     text-align: center;
     color: rgba(112, 112, 112, 0.5);
     margin-top: 0.13rem;
-    padding-bottom: 1.8rem;
 }
 
 /* right side */
 .team_blog{
-    width: 70%;
+    width: 65%;
+    height: 100%;
+    position: relative;
 }
 
-.person_1{
+.quotation{
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+}
 
+.person_3{
+    width: 100%;
+}
+
+.person_3 p{
+    font-size: 1.125rem;
+    font-family: var(--font-poppins);
+    color: #fff;
+    margin-top: 5.5rem;
 }
 
 
