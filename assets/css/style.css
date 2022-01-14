@@ -545,6 +545,77 @@ html{
 }
 
 
+/* ------------ team cards --------------------*/
+.team_section{
+    width: min(90rem, 100%);
+    min-height: 100vh;
+    background-color: #108EEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team_card_container{
+    width: 75rem;
+    background-color: #108EEE;
+    box-shadow: 0px 2px 30px -2px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    padding: 5rem 3rem 5rem 7rem;
+}
+
+/* left side */
+.team_profile_area{
+    width: 30%;
+    background-color: red;
+}
+
+/* card view area */
+.team_profile_view{
+    width: 19rem;
+    background-color: lightblue;
+}
+
+/* .profile-design{
+
+} */
+
+.team_card{
+    background-color: #fff;
+    width: 16rem;
+}
+
+.team_card img{
+    width: 100%;
+}
+
+.team_card h3{
+    font-size: 1.25rem;
+    color: #707070;
+    font-family: var(--font-poppins);
+    text-align: center;
+    font-weight: 500;
+    margin-top: 1.72rem;
+}
+
+.team_card p{
+    font-size: 1rem;
+    font-family: var(--font-poppins);
+    text-align: center;
+    color: rgba(112, 112, 112, 0.5);
+    margin-top: 0.13rem;
+    padding-bottom: 1.8rem;
+}
+
+/* right side */
+.team_blog{
+    width: 70%;
+}
+
+.person_1{
+
+}
+
 
 
 /*--------------------------------------
