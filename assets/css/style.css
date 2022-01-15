@@ -258,9 +258,13 @@ html{
 
 /*------------------ services -----------------------*/
 .services{
+    position: relative;
     background-color: transparent;
     width: min(90rem, 100%);
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 9rem;
     overflow-x: hidden;
 }
 
@@ -296,64 +300,55 @@ html{
 .services__cards{
     background-color: transparent;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
-    margin-bottom: 9rem;
-}
-
-/* all column */
-.cards__col{
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: calc(100% / 3 - 8rem);
-    min-width: 17rem;
-    margin-top: 3rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-.col-1, .col-3{
-    margin-top: 9rem;
+    width: 90%;
+    padding-top: 9rem;
 }
 
 /* all card */
-.card{
+.se_card{
     background-color: transparent;
-    width: 100%;
+    width: calc(100% / 3 - 7rem);
+    min-width: 17rem;
+    margin: 0 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: var(--font-poppins);
     border-radius: .7rem;
     border: 2px solid transparent;
-    transition: .3s;
     box-shadow: 0px 2px 30px -2px rgba(0,0,0,0.1);
+    transition: .3s;
+}
+
+/* separate card */
+.se_caed-2, .se_caed-5{
+    transform: translateY(-5rem);
+}
+
+.se_caed-4, .se_caed-5, .se_caed-6{
+    margin-top: 2.5rem;
 }
 
 .card:hover{
     border: 2px solid #4384F5;
 }
 
-/* 2nd card */
-.card-2nd{
-    margin-top: 3rem;
-}
-
-.card img{
+.se_card img{
     width: 6.625rem;
     margin-top: 4.5rem;
     display: block;
 }
 
-.card p{
+.se_card p{
     font-size: 1.25rem;
     color: #495467;
     margin-top: 1.8rem;
 }
 
-.card a{
+.se_card a{
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
@@ -366,7 +361,7 @@ html{
     transition: .3s;
 }
 
-.card a:hover{
+.se_card a:hover{
     color: #4384F5;
     border-color: #4384F5;
 }
@@ -678,9 +673,9 @@ html{
 
 
 
-/*--------------------------------------
------------responsive design----------- 
--------------------------------------*/
+/*--------------------------------------------
+--------------responsive design--------------- 
+--------------------------------------------*/
 
  @media(max-width: 1150px){
 
@@ -722,6 +717,36 @@ html{
 }
 
 
+@media(max-width: 1039px){
+    /* service */
+    .services{
+        padding-bottom: 0;
+    }
+
+    /* service all cards */
+    .se_card{
+        width: calc(100% / 2 - 9rem);
+    }
+
+    /* service separate card */ 
+    .se_caed-3{
+        margin-top: 2.5rem;
+    }
+    
+    .se_caed-4{
+        margin-top: -7.5rem;
+    }
+
+    .se_caed-5{
+        margin-top: 7.5rem;
+    }
+
+    .se_caed-6{
+        margin-top: -12.5rem;
+    }
+}
+
+
 @media(max-width: 992px){
     /* navbar */
     .nav-links li a{
@@ -736,36 +761,6 @@ html{
 }
 
 @media(max-width: 969px){
-    /* service */
-    .cards__col{
-        width: calc(100% / 2 - 8rem);
-    }
-
-    .col-3{
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-        margin-top: 3rem;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .col-3 .card{
-        width: calc(100% / 2 - 8rem);
-        min-width: 17rem;
-    }
-
-    .col-3 .card-1st{
-        margin-right: 1.5rem;
-        margin-left: 1.5rem;
-    }
-
-    .col-3 .card-2nd{
-        margin-top: -12rem;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
-
     /* sp logo */
     .sp_logo-wrapper{
         top: -3rem;
@@ -959,6 +954,36 @@ html{
 }
 
 
+@media(max-width: 693px){
+    /* service */
+    .services{
+        padding-bottom: 9rem;
+    }
+
+    /* service all cards */
+    .se_card{
+        width: calc(100% - 10rem);
+    }
+
+    /* service separate card */
+    .se_caed-2{
+        margin-top: 7.5rem;
+    }
+
+    .se_caed-3{
+        margin-top: -2.5rem;
+    }
+
+    .se_caed-4{
+        margin-top: 2.5rem;
+    }
+
+    .se_caed-6{
+        margin-top: -2.5rem;
+    }
+}
+
+
 @media(max-width: 670px){
 
     /* navbar */
@@ -1001,8 +1026,7 @@ html{
     .right-side{
         display: none;
     }
-
-    
+ 
     /* service background */
     .serv-bg{
         transform: translate(3.5rem, 27rem);
@@ -1012,31 +1036,6 @@ html{
 
 
 @media (max-width: 639px){
-    /* service cards */
-    .services__cards{
-        margin-bottom: 7rem;
-    }
-
-    /* services all column */
-    .cards__col{
-        width: calc(100% - 17rem);
-        margin-top: 3rem;
-    }
-
-    /* column 3 */
-    .col-3{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .col-3 .card{
-        width: calc(100% - 17rem);
-    }
-
-    .col-3 .card-2nd{
-        margin-top: 3rem;
-    }
-
     /* sp logo */
     .sp_logo-wrapper{
         top: -1.5rem;
