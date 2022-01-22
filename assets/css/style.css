@@ -452,6 +452,8 @@ html{
     padding: 1rem 1.5rem;
     border-radius: .5rem;
     box-shadow: none;
+    border: 2px solid transparent;
+    transition: .3s;
 }
 
 /* column 1 */
