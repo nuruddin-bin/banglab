@@ -207,6 +207,7 @@ html{
     color: #21272D;
     font-size: 2.75rem;
     margin-top: 8rem;
+    max-width: 12ch;
 }
 
 .left-side h2{
@@ -252,13 +253,6 @@ html{
     margin-left: 3rem;
     position: relative;
 }
-
-/* .right-side .img-wrapper .banner_B{
-    position: absolute;
-    top: 18rem;
-    left: 7.5rem;
-    width: 8.4rem;
-} */
 
 .right-side .img-wrapper img{
     display: block;
@@ -942,7 +936,7 @@ html{
     }
 
     .left-side h2{
-        font-size: 1.75rem;
+        font-size: 1.6rem;
         line-height: 1.2;
     }
 
