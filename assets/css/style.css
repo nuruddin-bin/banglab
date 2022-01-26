@@ -284,7 +284,7 @@ html{
 .service-heading h2{
     color: #4B4B4B;
     font-size: 2.5rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     text-align: center;
 }
 
@@ -1054,6 +1054,11 @@ html{
 
 
 @media (max-width: 607px){
+    /* service */
+    .services__cards{
+        padding-top: 5rem;
+    }
+
     /* special */
     .sp_cards{
         width: 90%;
