@@ -546,7 +546,7 @@ html{
 }
 
 
-/* ------------ team cards --------------------*/
+/* ---------------- team cards -------------------*/
 .team_section{
     width: min(90rem, 100%);
     min-height: 100vh;
@@ -563,7 +563,10 @@ html{
     display: flex;
     align-items: flex-start;
     padding: 5rem 3rem 5rem 4rem;
-    margin: 0 2rem;
+    margin: 3rem 2rem;
+    background-image: url(../img/team/quote-right.svg);
+    background-repeat: no-repeat;
+    background-position: right 2rem  bottom 2rem;
 }
 
 /* left side */
@@ -581,7 +584,6 @@ html{
     width: 70%;
     height: calc(100% + 3rem);
     top: -1.5rem;
-    /* left: 2rem; */
     border-radius: 1.7rem;
     background-color: rgba(0, 0, 0, 0.3);
 }
@@ -640,20 +642,9 @@ html{
     height: 100%;
     position: relative;
     margin-left: 1rem;
-}
-
-/* quotation mark */
-.quotation_1{
-    position: absolute;
-    top: -1rem;
-    left: 0rem;
-}
-
-.quotation_2{
-    position: absolute;
-    transform: rotate(180deg);
-    bottom: -15rem;
-    right: 0rem;
+    background-image: url(../img/team/quptation_left.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 
 /* persons */
