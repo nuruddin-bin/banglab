@@ -19,7 +19,7 @@
 }
 
 body{
-    background: #fff;
+    background: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,8 +45,8 @@ html{
 
 /*---- nav left side ---*/
 
-.nav-left-side{
-    width: 25%;
+.nav__left{
+    width: 20%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
@@ -76,16 +76,17 @@ html{
 /*----- nav right side ------*/
 
 .nav-right-side{
-    width: 75%;
+    width: 80%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .nav-links{
-    width: 60%;
+    width: 75%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .nav-links li{
@@ -123,6 +124,15 @@ html{
     transform: scale(1, 1);
 }
 
+/* login container */
+.button{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .login{
     text-transform: uppercase;
     font-size: 1.125rem;
@@ -132,7 +142,7 @@ html{
     background: var(--color-primary);
     padding: .4rem 2.5rem;
     border-radius: 10rem;
-    box-shadow: 0px 10px 34px rgba(15, 130, 219, 0.45);
+    box-shadow: 0px 10px 34px rgba(15, 130, 219, 0.2);
 }
 
 
@@ -751,8 +761,8 @@ html{
 
 @media(max-width: 992px){
     /* navbar */
-    .nav-links li a{
-        margin-left: .7rem;
+    .nav-links{
+        margin: 0 .7rem;
     }
 
     /* banner */
@@ -801,6 +811,7 @@ html{
 
     .nav-links{
         flex-direction: column;
+        margin: 0;
     }
 
     .nav-links li{
@@ -809,6 +820,8 @@ html{
 
     .button{
         margin: 2rem 3rem;
+        justify-content: flex-start;
+        align-items: flex-end;
     }
 
     /* hamburger */
